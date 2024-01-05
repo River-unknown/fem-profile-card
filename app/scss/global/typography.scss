@@ -1,0 +1,21 @@
+@use '../util/'as *;
+h1,
+h3{
+    font-weight: 700;
+    margin-top:0;
+    font-size: rem(25);
+    color:var(--desaturated_blue);
+}
+h2{
+    font-weight: 700;
+    margin:0;
+    margin-bottom: rem(5);
+    font-size: rem(20);
+    color:var(--desaturated_blue);
+    letter-spacing: normal;
+}
+a, 
+a:visited,
+a:active{
+    text-decoration:none;
+}

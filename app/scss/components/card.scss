@@ -1,0 +1,86 @@
+@use '../util/'as *;
+.card{
+    height: 98vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_components{
+    height:rem(420);
+    width:rem(410);
+    background-color: white;
+    border-radius: rem(20);
+    background-image:url('/images/bg-pattern-card.svg') ;
+    background-repeat: no-repeat;
+    background-size:100% rem(150);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint-down(small){
+        width:90%;
+    }
+}
+.profile{
+    height:rem(210);
+    width:rem(415);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    img{
+        border: rem(5) solid white;
+        border-radius: 100%;
+    }
+}
+.name_info{
+display:flex;
+align-items: baseline;
+justify-content: center;
+gap: rem(10);
+font-weight: 400;
+font-size:rem(25);
+color:var(--dark_grayish_blue);
+margin-top: rem(20);
+}
+.place{
+color: var(--dark_grayish_blue);
+font-size: rem(18);
+}
+hr{
+    color:#96969647;
+    width: 100%;
+    margin-top: rem(25);
+}
+.card_footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height:auto;
+    margin-top: rem(10);
+    font-size: rem(12);
+}
+.followers{
+    color: var(--dark_grayish_blue);
+    letter-spacing: rem(2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.likes{
+    color: var(--dark_grayish_blue);
+    letter-spacing: rem(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photos{
+    color: var(--dark_grayish_blue);
+    letter-spacing: rem(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,38 @@
+@use '../util/' as *;
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing:inherit;
+}
+  
+body{
+    margin:0;
+    padding:0;
+    font-family: var(--font-KS);
+    background-color: var(--bg_blue);
+    background-image: url('/images/bg-pattern-top.svg'),url('/images/bg-pattern-bottom.svg');
+    color:var(--desaturated_blue);
+    min-height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 20vw bottom 60vh, left 25vw top 50vh;
+    @include breakpoint(medium){
+        background-image: url('/images/bg-pattern-top.svg'),url('/images/bg-pattern-bottom.svg');
+        min-height: 100vh;
+        overflow: hidden;
+        background-repeat: no-repeat,no-repeat;
+        background-position: -55% 195%,140% -155%;
+    }
+}
+.visually-hidden{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
